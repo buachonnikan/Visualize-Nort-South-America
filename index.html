@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+        <!-------------------------------------------------- graph -------------------------------------------------------->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
+        <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/cylinder.js"></script>
+        <script src="https://code.highcharts.com/modules/funnel3d.js"></script>
+        <script src="https://code.highcharts.com/modules/pyramid3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/item-series.js"></script>
+        <link rel="stylesheet" type="text/css" href="./gdp_css/brazil.css">
+        <link rel="stylesheet" type="text/css" href="./gdp_css/canada.css">
+        <link rel="stylesheet" type="text/css" href="./gdp_css/us.css">
+        <link rel="stylesheet" type="text/css" href="./gdp_css/jm.css">
+        <link rel="stylesheet" type="text/css" href="./gdp_css/ag.css">
+        <!---------------------------------------------------------------------------------------------------------------->
+
+
+    </head>
+    
+    <body onload="check()">
+        <div style="width:100%;">
+            <div class="inn" id="b" onclick="menu()"><a href="#TAX" class="click" >TAX</a></div>
+            <div class="in" id="b1" onclick="menu()"><a href="#GDP" class="click">GDP</a></div>
+            <div class="in" id="b2" onclick="menu()"><a href="#REVENUE" class="click">REVENUE</a></div>
+        </div>
+        <button onclick="Omenu()" id="menu">MENU</button>
+        
+        <div id="TAX" style="height:100%;font-size: 50px;text-align: center;">
+            TAX
+            </div>
+        <div id="GDP" style="height:100%;">
+            <div class="slide-wrap" id="GDP">
+                <div class="wrap">
+                    <div class="slider">
+                        <div class="slide" id="slide-1"><div class="slidebox">overview</div></div>
+                        <div class="slide" id="slide-2"><div class="slidebox">agri graph</div></div>
+                        <div class="slide" id="slide-3"><div class="slidebox">indus graph</div></div>
+                        <div class="slide" id="slide-4"><div class="slidebox">service graph</div></div>
+                        <!-- <div class="slide" id="slide-5"><div class="slidebox">5</div></div> -->
+                        
+                        <div class="jumps">
+                            <div class="jump" id="j1"><a href="#slide-1" class="jumpp">Overview</a></div>
+                            <div class="jump" id="j2"><a href="#slide-2" class="jumpp">Agriculture</a></div>
+                            <div class="jump" id="j3"><a href="#slide-3" class="jumpp">Industrial</a></div>
+                            <div class="jump" id="j4"><a href="#slide-4" class="jumpp">Service</a></div>
+                            <!-- <div class="jump" id="j5"><a href="#slide-5" class="jumpp">5</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div style="height:50px;border:5px solid green;"></div> -->
+        <div id="REVENUE" style="height:100%;font-size: 50px;text-align: center;">REVENUE</div>
+
+    </body>
+        
+
+    <!------------------------------------------------- graph ------------------------------------------------------>
+
+    <script src="./js/export-gdp.js"></script>
+    <script src="./js/import-gdp.js"></script>
+    <script src="./js/valueadd-brazil.js"></script>
+    <script src="./js/valueadd-canada.js"></script>
+    <script src="./js/valueadd-United States.js"></script>
+    <script src="./js/valueadd-JM.js"></script>
+    <script src="./js/valueadd-AG.js"></script>
+
+    <!--------------------------------------------------------------------------------------------------------------->
+    <script>
+        var m=0;
+        function check(){
+            if(m==0){
+                document.getElementById("menu").style.display = "none";
+                m=1;
+            }
+        }
+        function Omenu(){
+            document.getElementById("b").style.top = "0";
+            document.getElementById("b1").style.left = "0";
+            document.getElementById("b2").style.right = "0";
+            document.getElementById("menu").style.display = "none";
+        }
+        function menu() {
+            document.getElementById("b").style.top = "-100%";
+            document.getElementById("b1").style.left = "-51%";
+            document.getElementById("b2").style.right = "-51%";
+            document.getElementById("menu").style.display = "initial";
+        }
+        
+    </script>
+</html>
