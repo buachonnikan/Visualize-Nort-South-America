@@ -17,11 +17,18 @@ var m=0;
                 document.getElementById("all_rev").style.display = "initial";
                 
                 document.getElementById("ec").style.display = "none";
-                document.getElementById("er").style.display = "none";
+                document.getElementById("er").style.display = "initial";
                 document.getElementById("eu").style.display = "none";
                 document.getElementById("ea").style.display = "none";
                 document.getElementById("ej").style.display = "none";
                 document.getElementById("eb").style.display = "none";
+
+                document.getElementById("ecg").style.display = "none";
+                document.getElementById("eg").style.display = "initial";
+                document.getElementById("eug").style.display = "none";
+                document.getElementById("eag").style.display = "none";
+                document.getElementById("ejg").style.display = "none";
+                document.getElementById("ebg").style.display = "none";
                 m=1;
             }
         }
@@ -47,6 +54,13 @@ var m=0;
             document.getElementById("AG").style.display = "none";
             document.getElementById("JM").style.display = "none";
             document.getElementById("gdp").style.display = "initial";
+
+            document.getElementById("ecg").style.display = "none";
+            document.getElementById("eg").style.display = "initial";
+            document.getElementById("eug").style.display = "none";
+            document.getElementById("eag").style.display = "none";
+            document.getElementById("ejg").style.display = "none";
+            document.getElementById("ebg").style.display = "none";
         }
         function br() {
             document.getElementById("brazil").style.display = "initial";
@@ -55,6 +69,13 @@ var m=0;
             document.getElementById("AG").style.display = "none";
             document.getElementById("JM").style.display = "none";
             document.getElementById("gdp").style.display = "none";
+            
+            document.getElementById("ecg").style.display = "none";
+            document.getElementById("eg").style.display = "none";
+            document.getElementById("eug").style.display = "none";
+            document.getElementById("eag").style.display = "none";
+            document.getElementById("ejg").style.display = "none";
+            document.getElementById("ebg").style.display = "initial";
         }
         function can() {
             document.getElementById("gdp").style.display = "none";
@@ -63,6 +84,13 @@ var m=0;
             document.getElementById("US").style.display = "none";
             document.getElementById("AG").style.display = "none";
             document.getElementById("JM").style.display = "none";
+
+            document.getElementById("ecg").style.display = "initial";
+            document.getElementById("eg").style.display = "none";
+            document.getElementById("eug").style.display = "none";
+            document.getElementById("eag").style.display = "none";
+            document.getElementById("ejg").style.display = "none";
+            document.getElementById("ebg").style.display = "none";
         }
         function us() {
             document.getElementById("gdp").style.display = "none";
@@ -71,6 +99,13 @@ var m=0;
             document.getElementById("US").style.display = "initial";
             document.getElementById("AG").style.display = "none";
             document.getElementById("JM").style.display = "none";
+
+            document.getElementById("ecg").style.display = "none";
+            document.getElementById("eg").style.display = "none";
+            document.getElementById("eug").style.display = "initial";
+            document.getElementById("eag").style.display = "none";
+            document.getElementById("ejg").style.display = "none";
+            document.getElementById("ebg").style.display = "none";
         }
         function ar() {
             document.getElementById("gdp").style.display = "none";
@@ -79,6 +114,13 @@ var m=0;
             document.getElementById("brazil").style.display = "none";
             document.getElementById("US").style.display = "none";
             document.getElementById("JM").style.display = "none";
+
+            document.getElementById("ecg").style.display = "none";
+            document.getElementById("eg").style.display = "none";
+            document.getElementById("eug").style.display = "none";
+            document.getElementById("eag").style.display = "initial";
+            document.getElementById("ejg").style.display = "none";
+            document.getElementById("ebg").style.display = "none";
         }
         function jm() {
             document.getElementById("gdp").style.display = "none";
@@ -87,6 +129,13 @@ var m=0;
             document.getElementById("canada").style.display = "none";
             document.getElementById("brazil").style.display = "none";
             document.getElementById("US").style.display = "none";
+
+            document.getElementById("ecg").style.display = "none";
+            document.getElementById("eg").style.display = "none";
+            document.getElementById("eug").style.display = "none";
+            document.getElementById("eag").style.display = "none";
+            document.getElementById("ejg").style.display = "initial";
+            document.getElementById("ebg").style.display = "none";
         }
 
         // revenue
