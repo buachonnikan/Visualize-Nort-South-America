@@ -1,5 +1,5 @@
 
-var colors = ['#C7DFC5', '#F6FEAA', '#FCE694'];
+var colors = ['#843b62', '#f67e7d', '#ffb997'];
 $( '#export' ).highcharts({
     tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
