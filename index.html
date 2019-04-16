@@ -6,8 +6,7 @@
 
 
         <!-------------------------------------------------- graph -------------------------------------------------------->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+    
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -19,6 +18,7 @@
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
         <script src="https://code.highcharts.com/modules/item-series.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
         <link rel="stylesheet" type="text/css" href="./gdp_css/brazil.css">
         <link rel="stylesheet" type="text/css" href="./gdp_css/canada.css">
         <link rel="stylesheet" type="text/css" href="./gdp_css/us.css">
@@ -30,6 +30,7 @@
         <link rel="stylesheet" type="text/css" href="./rev_css/can_rev.css">
         <link rel="stylesheet" type="text/css" href="./rev_css/jam_rev.css">
         <link rel="stylesheet" type="text/css" href="./rev_css/usa_rev.css">
+        
         <!---------------------------------------------------------------------------------------------------------------->
 
 
@@ -37,16 +38,23 @@
     
     <body onload="check()">
         <div style="width:100%;">
-            <div class="in" id="b1" onclick="menu()"><a href="#MAP" class="click">MAP</a></div>
-            <div class="in" id="b2" onclick="menu()"><a href="#IMPORT" class="click">IMPORT</a></div>
-            <div class="in" id="b3" onclick="menu()"><a href="#EXPORT" class="click">EXPORT</a></div>
-            <div class="in" id="b4" onclick="menu()"><a href="#TAX" class="click">TAX</a></div>
+            <div class="in" id="b1" onclick="menu()"><a href="#MAP" class="click"><div class="c">MAP</div></a></div>
+            <div class="in" id="b2" onclick="menu()"><a href="#IMPORT" class="click"><div class="c">IMPORT</div></a></div>
+            <div class="in" id="b3" onclick="menu()"><a href="#EXPORT" class="click"><div class="c">EXPORT</div></a></div>
+            <div class="in" id="b4" onclick="menu()"><a href="#TAX" class="click"><div class="c">TAX</div></a></div>
         </div>
         <button onclick="Omenu()" id="menu">MENU</button>
         
-        <div id="TAX" style="height:100%;font-size: 50px;text-align: center;">
-            TAX
+        <div id="TAX" style="height:100%;">
+            <div style="width:49%;height:100%;display: inline-block;float: left;position:relative">
+                <div id="tax" style="width:80%; height: 400px; margin: 15 auto;position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;"></div>
             </div>
+            <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                <br><br><br><br>
+                <div style="font-size: 40px;">อธิบาย</div>
+            </div> 
+            <!-- <div id="tax"style="height: 400px; margin: auto; min-width: 310px; max-width: 600px"></div> -->
+        </div>
         <div id="MAP" style="height:100%;">
             <div class="slide-wrap" id="GDP">
                 <div class="wrap">
@@ -95,7 +103,7 @@
                             </div>
                         </div>
 
-                        <!-- revenue-------------------------------------------------------------------- -->
+                        <!-- revenue----------------------------------------------------------------------->
                         <div class="slide" id="slide-2">
                             <div class="slidebox"  style="width:100%;height: 99%;">
                                 <div style="width:49%;height:100%;display: inline-block;float: left;">
@@ -167,7 +175,6 @@
                 <div style="font-size: 40px;">อธิบาย</div>
             </div> 
         </div>
-
     </body>
         
 
@@ -180,6 +187,7 @@
     <script src="./gdp_js/valueadd-United States.js"></script>
     <script src="./gdp_js/valueadd-JM.js"></script>
     <script src="./gdp_js/valueadd-AG.js"></script>
+    <script src="./gdp_js/tax.js"></script>
     <script src="./rev_js/all_revenue.js"></script>
     <script src="./rev_js/ARG_revenue.js"></script>
     <script src="./rev_js/BRA_revenue.js"></script>
@@ -188,111 +196,7 @@
     <script src="./rev_js/USA_revenue.js"></script>
 
     <!--------------------------------------------------------------------------------------------------------------->
-    <script>
-        var m=0;
-        function check(){
-            if(m==0){
-                document.getElementById("menu").style.display = "none";
-                document.getElementById("brazil").style.display = "none";
-                document.getElementById("canada").style.display = "none";
-                document.getElementById("US").style.display = "none";
-                document.getElementById("JM").style.display = "none";
-                document.getElementById("AG").style.display = "none";
-                
-                document.getElementById("BRA_rev").style.display = "none";
-                document.getElementById("CAN_rev").style.display = "none";
-                document.getElementById("USA_rev").style.display = "none";
-                document.getElementById("JAM_rev").style.display = "none";
-                document.getElementById("ARG_rev").style.display = "none";
-                
-                m=1;
-            }
-        }
-        function Omenu(){
-            document.getElementById("b1").style.left = "0";
-            document.getElementById("b2").style.right = "0";
-            document.getElementById("b3").style.left = "0";
-            document.getElementById("b4").style.right = "0";
-            document.getElementById("menu").style.display = "none";
-        }
-        function menu() {
-            document.getElementById("b1").style.left = "-51%";
-            document.getElementById("b2").style.right = "-49%";
-            document.getElementById("b3").style.left = "-51%";
-            document.getElementById("b4").style.right = "-49%";
-            document.getElementById("menu").style.display = "initial";
-        }
-        function br() {
-            document.getElementById("brazil").style.display = "initial";
-            document.getElementById("canada").style.display = "none";
-            document.getElementById("US").style.display = "none";
-            document.getElementById("AG").style.display = "none";
-            document.getElementById("JM").style.display = "none";
-        }
-        function can() {
-            document.getElementById("canada").style.display = "initial";
-            document.getElementById("brazil").style.display = "none";
-            document.getElementById("US").style.display = "none";
-            document.getElementById("AG").style.display = "none";
-            document.getElementById("JM").style.display = "none";
-        }
-        function us() {
-            document.getElementById("canada").style.display = "none";
-            document.getElementById("brazil").style.display = "none";
-            document.getElementById("US").style.display = "initial";
-            document.getElementById("AG").style.display = "none";
-            document.getElementById("JM").style.display = "none";
-        }
-        function ar() {
-            document.getElementById("AG").style.display = "initial";
-            document.getElementById("canada").style.display = "none";
-            document.getElementById("brazil").style.display = "none";
-            document.getElementById("US").style.display = "none";
-            document.getElementById("JM").style.display = "none";
-        }
-        function jm() {
-            document.getElementById("JM").style.display = "initial";
-            document.getElementById("AG").style.display = "none";
-            document.getElementById("canada").style.display = "none";
-            document.getElementById("brazil").style.display = "none";
-            document.getElementById("US").style.display = "none";
-        }
 
-        // revenue
-        function brr() {
-            document.getElementById("BRA_rev").style.display = "initial";
-            document.getElementById("CAN_rev").style.display = "none";
-            document.getElementById("USA_rev").style.display = "none";
-            document.getElementById("JAM_rev").style.display = "none";
-            document.getElementById("ARG_rev").style.display = "none";
-        }
-        function canr() {
-            document.getElementById("BRA_rev").style.display = "none";
-            document.getElementById("CAN_rev").style.display = "initial";
-            document.getElementById("JAM_rev").style.display = "none";
-            document.getElementById("ARG_rev").style.display = "none";
-            document.getElementById("USA_rev").style.display = "none";
-        }
-        function usr() {
-            document.getElementById("BRA_rev").style.display = "none";
-            document.getElementById("CAN_rev").style.display = "none";
-            document.getElementById("USA_rev").style.display = "initial";
-            document.getElementById("JAM_rev").style.display = "none";
-            document.getElementById("ARG_rev").style.display = "none";
-        }
-        function arr() {
-            document.getElementById("BRA_rev").style.display = "none";
-            document.getElementById("CAN_rev").style.display = "none";
-            document.getElementById("USA_rev").style.display = "none";
-            document.getElementById("JAM_rev").style.display = "none";
-            document.getElementById("ARG_rev").style.display = "initial";
-        }
-        function jmr() {
-            document.getElementById("BRA_rev").style.display = "none";
-            document.getElementById("CAN_rev").style.display = "none";
-            document.getElementById("USA_rev").style.display = "none";
-            document.getElementById("JAM_rev").style.display = "initial";
-            document.getElementById("ARG_rev").style.display = "none";
-        }
-    </script>
+    <script src="./main.js"></script>    
+
 </html>

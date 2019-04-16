@@ -1,5 +1,4 @@
 html, body {
-    /* width:1500px; */
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -12,8 +11,6 @@ html, body {
     width:100%;
     height:100%;
     position:relative;
-    /* padding-top: 35px;   
-    padding-bottom: 15px; */
 }
 .slider {
     width: 100%;
@@ -28,26 +25,21 @@ html, body {
     height: 700px;
     background-color: white;
     text-align: center;
-    /* font-size: 100px; */
     position:relative;
     color:black;
-    /* border:5px solid green */
 }
 .slidebox{
     position: absolute;
     transform: translate(-50%,-50%);
     top:50%;
     left:50%;
-    /* border:5px solid black; */
 }
 
 .jumps{
     text-align: center;
-    /* z-index: 1; */
     position: absolute;
     top:85%;
     left:35%;
-    /* border:5px solid green */
 }
 .jumpp{
     position:absolute;
@@ -60,7 +52,6 @@ html, body {
 }
 .jump{
     position:relative;
-    /* border-radius: 50%; */
     background-color: transparent;
     display: inline-block;
     width:190px;
@@ -92,15 +83,6 @@ html, body {
     scroll-behavior: none;
 }
 
-.open{
-    height: 100%; 
-    position:fixed;
-    top: 0px;
-    font-size: 30px;
-    width:100%;
-    background-color: pink; 
-    transition: top 1.2s;
-}
 .in{
     display: inline-block;
     height: 50%; 
@@ -109,58 +91,47 @@ html, body {
     font-size: 30px;
     z-index:999;
 }
-.inn{
-    display: inline-block;
-    height: 50%; 
-    position:fixed;
-    top: 0;
-    font-size: 30px;
-    z-index:999;
-}
 a{
     color:white;
     text-decoration: none;
     font-weight: 500;
 }
-/* #b{
-    width: 100%;
-    left:0;
-    background-color: #CCA290; 
-    transition: top 1.2s;
-} */
 #b1{
     width: 51%;
     left:0;
-    background-color: #FFD500; 
+    background-color: #155263; 
     transition: left 0.9s;
 }
 #b2{
     width: 49%;
     right:0;
-    background-color: #90B6A5; 
+    background-color: #ff6f3c; 
     transition: right 0.5s;
 }
 #b3{
     width: 51%;
     left:0;
     top:0;
-    background-color: #CCA290; 
+    background-color: #ffc93c; 
     transition: left 0.7s;
 }
 #b4{
     width: 49%;
     right:0;
     top:0;
-    background-color: #FFD500; 
+    background-color: #ff9a3c; 
     transition: right 0.8s;
 }
 .click{
     position:absolute;
+    width:100%;
+    height:100%;
+}
+.c{
+    position: absolute;
     transform: translate(-50%,-50%);
     top:50%;
     left:50%;
-    width:100%;
-    height:100%;
 }
 #menu{
     width:65px;
@@ -228,7 +199,6 @@ a{
     height:auto;
     cursor: pointer;
     z-index: 3;
-    /* border:5px solid red; */
 }
 .BR{
     position: absolute;
@@ -238,7 +208,6 @@ a{
     width:5.3%;
     cursor: pointer;
     z-index: 2;
-    /* border:5px solid red; */
 }
 .JM{
     position: absolute;
@@ -252,7 +221,6 @@ a{
     background: #765285;
     width:50px;
     height: 50px;
-    /* border:5px solid red; */
 }
 .JM:hover{
     background: #aa50ce;
@@ -274,7 +242,6 @@ a{
     width:14%;
     cursor: pointer;
     z-index: 0;
-    /* border:5px solid red; */
 }
 .CAN{
     position: absolute;
@@ -284,7 +251,6 @@ a{
     width:12.3%;
     cursor: pointer;
     z-index: 1;
-    /* border:5px solid red; */
 }
 .none{
     position: absolute;
@@ -293,5 +259,4 @@ a{
     left:25%;
     width:23%;
     z-index: -1;
-    /* border:5px solid red; */
 }
