@@ -44,17 +44,75 @@
             <div class="slide-wrap" id="GDP">
                 <div class="wrap">
                     <div class="slider">
-                        <div class="slide" id="slide-1"><div class="slidebox">overview</div></div>
-                        <div class="slide" id="slide-2"><div class="slidebox">agri graph</div></div>
-                        <div class="slide" id="slide-3"><div class="slidebox">indus graph</div></div>
-                        <div class="slide" id="slide-4"><div class="slidebox">service graph</div></div>
+                        <div class="slide" id="slide-1">
+                            <div class="slidebox"  style="width:100%;height: 99%;">
+                                <div style="width:49%;height:100%;display: inline-block;float: left;">
+                                    <!-- <input src="./img/AR.png" class="AR" onclick="ar()"> -->
+                                    <div class="ar">
+                                        <img src="./img/AR.png" class="AR" onclick="ar()">
+                                        <div class="overlay" id="ar">
+                                            <div class="text">Argentina</div>
+                                        </div>
+                                    </div>
+                                    <div class="br">
+                                        <img src="./img/BR.png" class="BR" onclick="br()">
+                                        <div class="overlay" id="br">
+                                            <div class="text">Brazil</div>
+                                        </div>
+                                    </div>
+                                    <div class="us">
+                                        <img src="./img/US.png" class="US" onclick="us()">
+                                        <div class="overlay" id="us">
+                                            <div class="text">United States</div>
+                                        </div>
+                                    </div>
+                                    <div class="can">
+                                        <img src="./img/CAN.png" class="CAN" onclick="can()">
+                                        <div class="overlay" id="can">
+                                            <div class="text">Canada</div>
+                                        </div>
+                                    </div>
+                                    <div class="JM" onclick="jm()"><div class="jm">Jamaica</div></div>
+                                    <img src="./img/none.png" class="none">
+                                </div>
+                                <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                    <div id="brazil" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                    <div id="canada" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                    <div id="US" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                    <div id="JM" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                    <div id="AG" style="position:absolute;transform: translate(-50%,-50%);top:52.25%;left:25%;"></div>  
+                                </div>    
+                            <!-- <div id="brazil"></div> -->
+                            </div>
+                        </div>
+                        <div class="slide" id="slide-2">
+                            <div style="width:49%;height:100%;display: inline-block;float: left;position:relative">
+                                <div id="import" style="width:80%; height: 400px; margin: 15 auto;position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;"></div>
+                            </div>
+                            <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                <br><br><br><br>
+                                <div style="font-size: 40px;">อธิบาย</div>
+                            </div> 
+                        </div>
+                        <div class="slide" id="slide-3">
+                            <!-- <div class="slidebox"> -->
+                                <div style="width:49%;height:100%;display: inline-block;float: left;position:relative">
+                                    <div id="export" style="width:80%; height: 400px; margin: 15 auto;position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;"></div>
+                                </div>
+                                <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                    <br><br><br><br>
+                                    <div style="font-size: 40px;">อธิบาย</div>
+                                </div> 
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="slide" id="slide-4"><div class="slidebox">service graph</div></div> -->
                         <!-- <div class="slide" id="slide-5"><div class="slidebox">5</div></div> -->
                         
                         <div class="jumps">
                             <div class="jump" id="j1"><a href="#slide-1" class="jumpp">Overview</a></div>
-                            <div class="jump" id="j2"><a href="#slide-2" class="jumpp">Agriculture</a></div>
-                            <div class="jump" id="j3"><a href="#slide-3" class="jumpp">Industrial</a></div>
-                            <div class="jump" id="j4"><a href="#slide-4" class="jumpp">Service</a></div>
+                            <div class="jump" id="j2"><a href="#slide-2" class="jumpp">Imports</a></div>
+                            <div class="jump" id="j3"><a href="#slide-3" class="jumpp">Exports</a></div>
+                            <!-- <div class="jump" id="j4"><a href="#slide-4" class="jumpp">Service</a></div> -->
                             <!-- <div class="jump" id="j5"><a href="#slide-5" class="jumpp">5</a></div> -->
                         </div>
                     </div>
@@ -62,20 +120,99 @@
             </div>
         </div>
         <!-- <div style="height:50px;border:5px solid green;"></div> -->
-        <div id="REVENUE" style="height:100%;font-size: 50px;text-align: center;">REVENUE</div>
+        <div id="REVENUE" style="height:100%;">
+                <div class="slide-wrap" id="GDP">
+                    <div class="wrap">
+                        <div class="slider">
+                            <div class="slide" id="slide-r1">
+                                <div class="slidebox"  style="width:100%;height: 99%;">
+                                    <div style="width:49%;height:100%;display: inline-block;float: left;">
+                                        <!-- <input src="./img/AR.png" class="AR" onclick="ar()"> -->
+                                        <div class="ar">
+                                            <img src="./img/AR.png" class="AR" onclick="ar()">
+                                            <div class="overlay" id="ar">
+                                                <div class="text">Argentina</div>
+                                            </div>
+                                        </div>
+                                        <div class="br">
+                                            <img src="./img/BR.png" class="BR" onclick="br()">
+                                            <div class="overlay" id="br">
+                                                <div class="text">Brazil</div>
+                                            </div>
+                                        </div>
+                                        <div class="us">
+                                            <img src="./img/US.png" class="US" onclick="us()">
+                                            <div class="overlay" id="us">
+                                                <div class="text">United States</div>
+                                            </div>
+                                        </div>
+                                        <div class="can">
+                                            <img src="./img/CAN.png" class="CAN" onclick="can()">
+                                            <div class="overlay" id="can">
+                                                <div class="text">Canada</div>
+                                            </div>
+                                        </div>
+                                        <div class="JM" onclick="jm()"><div class="jm">Jamaica</div></div>
+                                        <img src="./img/none.png" class="none">
+                                    </div>
+                                    <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                        <div id="brazil" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                        <div id="canada" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                        <div id="US" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                        <div id="JM" style="position:absolute;transform: translate(-50%,-50%);top:50%;left:25%;"></div>  
+                                        <div id="AG" style="position:absolute;transform: translate(-50%,-50%);top:52.25%;left:25%;"></div>  
+                                    </div>    
+                                <!-- <div id="brazil"></div> -->
+                                </div>
+                            </div>
+                            <div class="slide" id="slide-r2">
+                                <div style="width:49%;height:100%;display: inline-block;float: left;position:relative">
+                                    <div id="import" style="width:80%; height: 400px; margin: 15 auto;position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;"></div>
+                                </div>
+                                <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                    <br><br><br><br>
+                                    <div style="font-size: 40px;">อธิบาย</div>
+                                </div> 
+                            </div>
+                            <div class="slide" id="slide-r3">
+                                <!-- <div class="slidebox"> -->
+                                    <div style="width:49%;height:100%;display: inline-block;float: left;position:relative">
+                                        <div id="export" style="width:80%; height: 400px; margin: 15 auto;position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;"></div>
+                                    </div>
+                                    <div style="width:49%;height:100%;float: right;display:inline-block;position: relative;">
+                                        <br><br><br><br>
+                                        <div style="font-size: 40px;">อธิบาย</div>
+                                    </div> 
+                                <!-- </div> -->
+                            </div>
+                            <!-- <div class="slide" id="slide-4"><div class="slidebox">service graph</div></div> -->
+                            <!-- <div class="slide" id="slide-5"><div class="slidebox">5</div></div> -->
+                            
+                            <div class="jumps">
+                                <div class="jump" id="j1"><a href="#slide-r1" class="jumpp">Overview</a></div>
+                                <div class="jump" id="j2"><a href="#slide-r2" class="jumpp">Imports</a></div>
+                                <div class="jump" id="j3"><a href="#slide-r3" class="jumpp">Exports</a></div>
+                                <!-- <div class="jump" id="j4"><a href="#slide-4" class="jumpp">Service</a></div> -->
+                                <!-- <div class="jump" id="j5"><a href="#slide-5" class="jumpp">5</a></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
         
 
     <!------------------------------------------------- graph ------------------------------------------------------>
 
-    <script src="./js/export-gdp.js"></script>
-    <script src="./js/import-gdp.js"></script>
-    <script src="./js/valueadd-brazil.js"></script>
-    <script src="./js/valueadd-canada.js"></script>
-    <script src="./js/valueadd-United States.js"></script>
-    <script src="./js/valueadd-JM.js"></script>
-    <script src="./js/valueadd-AG.js"></script>
+    <script src="./gdp_js/export-gdp.js"></script>
+    <script src="./gdp_js/import-gdp.js"></script>
+    <script src="./gdp_js/valueadd-brazil.js"></script>
+    <script src="./gdp_js/valueadd-canada.js"></script>
+    <script src="./gdp_js/valueadd-United States.js"></script>
+    <script src="./gdp_js/valueadd-JM.js"></script>
+    <script src="./gdp_js/valueadd-AG.js"></script>
 
     <!--------------------------------------------------------------------------------------------------------------->
     <script>
@@ -83,6 +220,11 @@
         function check(){
             if(m==0){
                 document.getElementById("menu").style.display = "none";
+                document.getElementById("brazil").style.display = "none";
+                document.getElementById("canada").style.display = "none";
+                document.getElementById("US").style.display = "none";
+                document.getElementById("JM").style.display = "none";
+                document.getElementById("AG").style.display = "none";
                 m=1;
             }
         }
@@ -98,6 +240,40 @@
             document.getElementById("b2").style.right = "-51%";
             document.getElementById("menu").style.display = "initial";
         }
-        
+        function br() {
+            document.getElementById("brazil").style.display = "initial";
+            document.getElementById("canada").style.display = "none";
+            document.getElementById("US").style.display = "none";
+            document.getElementById("AG").style.display = "none";
+            document.getElementById("JM").style.display = "none";
+        }
+        function can() {
+            document.getElementById("canada").style.display = "initial";
+            document.getElementById("brazil").style.display = "none";
+            document.getElementById("US").style.display = "none";
+            document.getElementById("AG").style.display = "none";
+            document.getElementById("JM").style.display = "none";
+        }
+        function us() {
+            document.getElementById("canada").style.display = "none";
+            document.getElementById("brazil").style.display = "none";
+            document.getElementById("US").style.display = "initial";
+            document.getElementById("AG").style.display = "none";
+            document.getElementById("JM").style.display = "none";
+        }
+        function ar() {
+            document.getElementById("AG").style.display = "initial";
+            document.getElementById("canada").style.display = "none";
+            document.getElementById("brazil").style.display = "none";
+            document.getElementById("US").style.display = "none";
+            document.getElementById("JM").style.display = "none";
+        }
+        function jm() {
+            document.getElementById("JM").style.display = "initial";
+            document.getElementById("AG").style.display = "none";
+            document.getElementById("canada").style.display = "none";
+            document.getElementById("brazil").style.display = "none";
+            document.getElementById("US").style.display = "none";
+        }
     </script>
 </html>

@@ -1,10 +1,11 @@
 html, body {
+    /* width:1500px; */
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
 .slide-wrap{
@@ -27,7 +28,7 @@ html, body {
     height: 700px;
     background-color: white;
     text-align: center;
-    font-size: 100px;
+    /* font-size: 100px; */
     position:relative;
     color:black;
     /* border:5px solid green */
@@ -45,7 +46,7 @@ html, body {
     /* z-index: 1; */
     position: absolute;
     top:85%;
-    left:35%;
+    left:38.5%;
     /* border:5px solid green */
 }
 .jumpp{
@@ -163,4 +164,123 @@ a{
     left:10px;
     z-index:999;
     cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transition: .25s ease;
+    background-color: white;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#ar{
+    top:74.15%;
+    left:24.60%;
+}
+#br{
+    top:67%;
+    left:36%;
+}
+#us{
+    top:50%;
+    left:17%;
+}
+#can{
+    top:25%;
+    left:18%;
+}
+.ar:hover .overlay, .br:hover .overlay,.us:hover .overlay, .can:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.AR{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:74.15%;
+    left:29.60%;
+    width:2.5%;
+    height:auto;
+    cursor: pointer;
+    z-index: 3;
+    /* border:5px solid red; */
+}
+.BR{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:67%;
+    left:31%;
+    width:5.3%;
+    cursor: pointer;
+    z-index: 2;
+    /* border:5px solid red; */
+}
+.JM{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:55%;
+    left:31%;
+    width:5.3%;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    background: #765285;
+    width:50px;
+    height: 50px;
+    /* border:5px solid red; */
+}
+.JM:hover{
+    background: #aa50ce;
+}
+.jm{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+    font-weight: 600;
+    color:white;
+    font-size:10px;
+}
+.US{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:44.75%;
+    left:22%;
+    width:14%;
+    cursor: pointer;
+    z-index: 0;
+    /* border:5px solid red; */
+}
+.CAN{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:33%;
+    left:25%;
+    width:12.3%;
+    cursor: pointer;
+    z-index: 1;
+    /* border:5px solid red; */
+}
+.none{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:25%;
+    width:23%;
+    z-index: -1;
+    /* border:5px solid red; */
 }
