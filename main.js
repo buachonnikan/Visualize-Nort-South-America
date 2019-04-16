@@ -13,6 +13,7 @@ var m=0;
                 document.getElementById("USA_rev").style.display = "none";
                 document.getElementById("JAM_rev").style.display = "none";
                 document.getElementById("ARG_rev").style.display = "none";
+                document.getElementById("all_rev").style.display = "initial";
                 
                 m=1;
             }
@@ -69,6 +70,7 @@ var m=0;
 
         // revenue
         function brr() {
+            document.getElementById("all_rev").style.display = "none";
             document.getElementById("BRA_rev").style.display = "initial";
             document.getElementById("CAN_rev").style.display = "none";
             document.getElementById("USA_rev").style.display = "none";
@@ -76,6 +78,7 @@ var m=0;
             document.getElementById("ARG_rev").style.display = "none";
         }
         function canr() {
+            document.getElementById("all_rev").style.display = "none";
             document.getElementById("BRA_rev").style.display = "none";
             document.getElementById("CAN_rev").style.display = "initial";
             document.getElementById("JAM_rev").style.display = "none";
@@ -83,6 +86,7 @@ var m=0;
             document.getElementById("USA_rev").style.display = "none";
         }
         function usr() {
+            document.getElementById("all_rev").style.display = "none";
             document.getElementById("BRA_rev").style.display = "none";
             document.getElementById("CAN_rev").style.display = "none";
             document.getElementById("USA_rev").style.display = "initial";
@@ -90,6 +94,7 @@ var m=0;
             document.getElementById("ARG_rev").style.display = "none";
         }
         function arr() {
+            document.getElementById("all_rev").style.display = "none";
             document.getElementById("BRA_rev").style.display = "none";
             document.getElementById("CAN_rev").style.display = "none";
             document.getElementById("USA_rev").style.display = "none";
@@ -97,6 +102,7 @@ var m=0;
             document.getElementById("ARG_rev").style.display = "initial";
         }
         function jmr() {
+            document.getElementById("all_rev").style.display = "none";
             document.getElementById("BRA_rev").style.display = "none";
             document.getElementById("CAN_rev").style.display = "none";
             document.getElementById("USA_rev").style.display = "none";

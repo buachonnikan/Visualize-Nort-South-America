@@ -9,7 +9,7 @@ $( '#all_rev' ).highcharts({
     useHTML: true
   },
   title: {
-    text: 'Revenue (% of GDP)'
+    text: 'Government Revenue (% of GDP)'
   },
   subtitle: {
     text: 'Source: https://databank.worldbank.org'
